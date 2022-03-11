@@ -27,4 +27,10 @@ describe("calculator", () => {
       //TODO: edge cases
     });
   });
+  describe("divide", () => {
+    it("should return the quotient of two numbers", () => {
+      assert.strictEqual(calculator.divide(6, 4), 1.5);
+      assert.strictEqual(calculator.divide(-6, 4), -1.5);
+    });
+  });
 });
